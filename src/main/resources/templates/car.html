@@ -7,10 +7,18 @@
 <body>
 <h1>KURS THYMELEAF</h1>
 <p>Hello World!</p>
+
+<tr th:each="car: ${cars}">
+    <td th:text="${car.getMark()}"/><br>
+    <td th:text="${car.getModel()}"/><br>
+    <p>==========</p>
+<tr/>
+
+<!--
 <p th:text="${name}">  </p>
 <p th:text="${car.getMark()}"></p>
 <p th:text="${car.getModel()}"></p>
-
+-->
 
 </body>
 </html>
