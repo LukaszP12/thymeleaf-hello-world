@@ -21,10 +21,11 @@ public class CarController {
         model.addAttribute("cars",cars);
 
         for(Car car : cars){
-            
+
         }
 
         return "car";
     }
+
 
 }
